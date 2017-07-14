@@ -1,3 +1,4 @@
+//Ubuntu 16.04 LTS运行通过
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
