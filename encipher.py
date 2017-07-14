@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #coding:utf-8
 #download from git clone https://github.com/m654z/Encipher
 from itertools import cycle
