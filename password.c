@@ -9,9 +9,11 @@ void encode(char* text,char* key){
 	//XOR
 	srand((unsigned)time(NULL));
 	int i=0;
-	int k;
+	int k=1;
 	while(*(text+i)!='\0'){
-		k=(int)(1+rand()%9+0.5);
+		while(k<=0){
+			k=(int)(1+rand()%9+0.5);
+		}
 		*(text+i) = (int)*(text+i) ^ k;
 		*(key+i)=48+k; // to string '12345679'
 		i++;
